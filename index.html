@@ -1,1 +1,80 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anosha Portfolio Homepage</title>
+</head>
+<body>
+
+    <header>
+        <h1>Anosha's Portfolio</h1>
+        <p id="welcomeMessage">Welcome to my portfolio homepage.</p>
+
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                My name is Anosha, and I am a Software Development student at ECPI University.
+                I am learning HTML, CSS, JavaScript, and web development.
+                I enjoy creating websites and improving my technical skills.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Below are three project links. These can be updated with my own GitHub projects later.</p>
+
+            <a href="https://github.com/" target="_blank">
+                <img src="https://via.placeholder.com/150" alt="Project 1">
+            </a>
+
+            <a href="https://github.com/" target="_blank">
+                <img src="https://via.placeholder.com/150" alt="Project 2">
+            </a>
+
+            <a href="https://github.com/" target="_blank">
+                <img src="https://via.placeholder.com/150" alt="Project 3">
+            </a>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form>
+                <label for="senderName">Sender Name:</label><br>
+                <input type="text" id="senderName" name="senderName"><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    </main>
+
+    <script>
+        // This JavaScript prompts the user for their name.
+        // It then updates the welcome message at the top of the page.
+        var userName = prompt("What is your name?");
+        document.getElementById("welcomeMessage").innerText = "Welcome to my portfolio, " + userName + "!";
+    </script>
+
+</body>
+</html>
